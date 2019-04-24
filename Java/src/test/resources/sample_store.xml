@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<store name="Nordstan">
+<store name="Nordstan"
+       currency="SEK"
+       id="23242"
+       type="boutique">
     <product id="EVENT02" location="Nordstan">
         <price currency="EUR">149.99</price>
+        <trainer>TRAINER01</trainer>
         Makeover
     </product>
     <product id="EVENT01" location="Nordstan">
         <price currency="EUR">119.99</price>
+        <trainer>TRAINER01</trainer>
         Eyeshadow Masterclass
     </product>
     <product id="LIPSTICK01" weight="30">
         <price currency="EUR">14.99</price>
         Cherry Bloom
     </product>
+    <product id="LIPSTICK02" weight="30">
+        <price currency="EUR">14.99</price>
+        Rose
+    </product>
+    <staff>
+        <trainer id="TRAINER01">Beata Flint</trainer>
+        <trainer id="TRAINER02">Sally Chalke</trainer>
+        <team_lead>TRAINER01</team_lead>
+    </staff>
+    <profile>
+        2342534656
+    </profile>
+    <next_event>EVENT01</next_event>
 </store>

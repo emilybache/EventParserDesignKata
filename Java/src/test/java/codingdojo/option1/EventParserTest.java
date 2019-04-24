@@ -4,8 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.InputStream;
-import java.util.Arrays;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,21 +18,37 @@ public class EventParserTest {
         inputStream = classLoader.getResourceAsStream(filename);
 
     }
-
+/*
     @Test
-    public void parseEventNames() {
+    public void parseStoreType() throws Exception {
         EventParser eventParser = new EventParser(inputStream);
-        List<String> eventNames = eventParser.getEvents();
-        List<String> expected = Arrays.asList("Makeover", "Eyeshadow Masterclass");
-        assertEquals(expected, eventNames);
+        String storeClass = eventParser.getStoreType();
+        assertEquals("boutique", storeClass);
     }
 
     @Test
-    public void parseEventPrices() {
+    public void parseProfile() throws Exception {
         EventParser eventParser = new EventParser(inputStream);
-        List<Price> eventPrices = eventParser.getPrices();
-        List<Price> expected = Arrays.asList(new Price(149.99, "EUR"),
-                new Price(119.99, "EUR"));
-        assertEquals(expected, eventPrices);
+        long profile = eventParser.getProfile();
+        assertEquals(2342534656L, profile);
     }
+
+    @Test
+    public void parseEventName() throws Exception {
+        EventParser eventParser = new EventParser(inputStream);
+        String nextEvent = eventParser.getEventName();
+        assertEquals("Eyeshadow Masterclass", nextEvent);
+    }
+
+
+    @Test
+    public void parseNextEvent() throws Exception {
+        EventParser eventParser = new EventParser(inputStream);
+        StoreEvent nextEvent = eventParser.getNextEvent();
+        assertEquals("boutique", event.getStoreType());
+        assertEquals(2342534656L, event.getStoreProfile());
+        assertEquals("Eyeshadow Masterclass", nextEvent.getName());
+    }
+
+    */
 }

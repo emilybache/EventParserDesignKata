@@ -31,18 +31,18 @@ public class EventParserTest {
 
     }
 
-    @Test
-    public void parseEventNames() {
-        List<String> eventNames = EventParser.getEvents(document);
-        List<String> expected = Arrays.asList("Makeover", "Eyeshadow Masterclass");
-        assertEquals(expected, eventNames);
-    }
-
-    @Test
-    public void parseEventPrices() {
-        List<Price> eventPrices = EventParser.getPrices(document);
-        List<Price> expected = Arrays.asList(new Price(149.99, "EUR"),
-                new Price(119.99, "EUR"));
-        assertEquals(expected, eventPrices);
-    }
+//    @Test
+//    public void parseEventNames() {
+//        List<String> eventNames = EventParser.getEvents(document);
+//        List<String> expected = Arrays.asList("Makeover", "Eyeshadow Masterclass");
+//        assertEquals(expected, eventNames);
+//    }
+//
+//    @Test
+//    public void parseEventPrices() {
+//        List<Price> eventPrices = EventParser.getPrices(document);
+//        List<Price> expected = Arrays.asList(new Price(149.99, "EUR"),
+//                new Price(119.99, "EUR"));
+//        assertEquals(expected, eventPrices);
+//    }
 }

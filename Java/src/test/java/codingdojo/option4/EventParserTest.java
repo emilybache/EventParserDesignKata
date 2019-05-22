@@ -1,10 +1,9 @@
-package codingdojo.option2;
+package codingdojo.option4;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.InputStream;
-import java.util.Arrays;
 
 public class EventParserTest {
 
@@ -17,10 +16,9 @@ public class EventParserTest {
         inputStream = classLoader.getResourceAsStream(filename);
 
     }
-
 //    @Test
 //    public void createEventList() {
-//        List<StoreEvent> events = new EventParser().parse(inputStream);
+//        List<StoreEvent> events = new EventParser(inputStream).getEvents();
 //        List<StoreEvent> expected = Arrays.asList(
 //                new StoreEvent("Makeover", new Price(149.99, "EUR")),
 //                new StoreEvent("Eyeshadow Masterclass", new Price(119.99, "EUR"))

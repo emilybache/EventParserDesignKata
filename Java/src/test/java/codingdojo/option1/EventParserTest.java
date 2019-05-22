@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import java.io.InputStream;
 import java.util.Arrays;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,7 +19,6 @@ public class EventParserTest {
         inputStream = classLoader.getResourceAsStream(filename);
 
     }
-
 
 //    @Test
 //    public void parseEventNames() {
@@ -38,4 +36,16 @@ public class EventParserTest {
 //                new Price(119.99, "EUR"));
 //        assertEquals(expected, eventPrices);
 //    }
+//
+//    @Test
+//    public void parseEventPrices() {
+//        EventParser eventParser = new EventParser(inputStream);
+//        List<Price> events = eventParser.getStoreEvents();
+//        List<StoreEvent> expected = Arrays.asList(
+//                new StoreEvent("Makeover", new Price(149.99, "EUR")),
+//                new StoreEvent("Eyeshadow Masterclass", new Price(119.99, "EUR"))
+//                );
+//        assertEquals(expected, events);
+//    }
+
 }

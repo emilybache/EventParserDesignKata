@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.InputStream;
-import java.util.Arrays;
 
 public class EventParserTest {
 
@@ -13,7 +12,7 @@ public class EventParserTest {
     @Before
     public void setUp() {
         String filename = "sample_store.xml";
-        ClassLoader classLoader = codingdojo.option1.EventParserTest.class.getClassLoader();
+        ClassLoader classLoader = EventParserTest.class.getClassLoader();
         inputStream = classLoader.getResourceAsStream(filename);
 
     }
@@ -27,4 +26,5 @@ public class EventParserTest {
 //                );
 //        assertEquals(expected, events);
 //    }
+
 }

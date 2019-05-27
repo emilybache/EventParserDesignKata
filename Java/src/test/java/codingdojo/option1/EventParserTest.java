@@ -1,7 +1,6 @@
 package codingdojo.option1;
 
 import org.junit.Before;
-import org.junit.Test;
 
 import java.io.InputStream;
 
@@ -18,37 +17,14 @@ public class EventParserTest {
         inputStream = classLoader.getResourceAsStream(filename);
 
     }
-/*
-    @Test
-    public void parseStoreType() throws Exception {
-        EventParser eventParser = new EventParser(inputStream);
-        String storeClass = eventParser.getStoreType();
-        assertEquals("boutique", storeClass);
-    }
 
-    @Test
-    public void parseProfile() throws Exception {
-        EventParser eventParser = new EventParser(inputStream);
-        long profile = eventParser.getProfile();
-        assertEquals(2342534656L, profile);
-    }
-
-    @Test
-    public void parseEventName() throws Exception {
-        EventParser eventParser = new EventParser(inputStream);
-        String nextEvent = eventParser.getEventName();
-        assertEquals("Eyeshadow Masterclass", nextEvent);
-    }
+//    @Test
+//    public void parseNextEvent() throws Exception {
+//        StoreEvent event = new codingdojo.option1.EventParser().parse(inputStream);
+//        assertEquals("boutique", event.getStoreType());
+//        assertEquals(2342534656L, event.getStoreProfile());
+//        assertEquals("Eyeshadow Masterclass", event.getName());
+//    }
 
 
-    @Test
-    public void parseNextEvent() throws Exception {
-        EventParser eventParser = new EventParser(inputStream);
-        StoreEvent nextEvent = eventParser.getNextEvent();
-        assertEquals("boutique", event.getStoreType());
-        assertEquals(2342534656L, event.getStoreProfile());
-        assertEquals("Eyeshadow Masterclass", nextEvent.getName());
-    }
-
-    */
 }

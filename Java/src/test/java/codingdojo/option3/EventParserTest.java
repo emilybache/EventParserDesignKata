@@ -51,6 +51,6 @@ public class EventParserTest {
 //        assertEquals("boutique", event.getStoreType());
 //        assertEquals(2342534656L, event.getStoreProfile());
 //        assertEquals("Eyeshadow Masterclass", event.getName());
-    }
+//    }
 
 }
